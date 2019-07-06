@@ -28,7 +28,7 @@ code {
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 30vmin;
+  height: 25vmin;
   pointer-events: none;
 }
 
