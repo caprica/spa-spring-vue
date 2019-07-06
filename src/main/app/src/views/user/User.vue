@@ -16,6 +16,7 @@
       </tbody>
     </table>
     <p v-show="loading" key="loading">Fetching user {{ $route.params.username }}...</p>
+    <p v-show="error" key="error">Failed to load user: {{ error.message }}</p>
     <br>
     <span><router-link class="App-link" to="/">Home</router-link> | <router-link class="App-link" to="/users">Users</router-link></span>
   </div>
@@ -34,11 +35,13 @@ export default {
   data: function() {
     return {
       loading: false,
+      error: '',
       user: []
     }
   },
   methods: {
     getUser: async(component, username) => {
+      component.error = ''
       component.loading = true
       try {
         const response = await fetch(`${serviceUrl}/${username}`)
