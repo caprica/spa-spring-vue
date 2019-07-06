@@ -99,7 +99,7 @@ module.exports = {
 You may need to adjust the port number, in this case 8080 is the port number used by the Jetty container launched
 by the aforementioned maven command.
 
-And then as usual to run the development version of the application (use port 3000 rather than 8080):
+And then as usual to run the development version of the application (use port 8081 by default rather than 8080):
 
 ```
 cd src/main/app
