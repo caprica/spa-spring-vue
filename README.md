@@ -62,7 +62,7 @@ It can still be useful to route to static assets on the server - e.g. images or 
 application itself.
 
 This project also has client-side routing enabled. These are deep links that will be routed to the client index
-page where the React router will take over: 
+page where the Vue router will take over:
 
 ```
 http://localhost:8080/users
@@ -74,7 +74,7 @@ http://localhost:8080/a/not/found/page
 
 Full refreshes will work and be routed correctly.
 
-Everything else is just like any other ReactJS application.
+Everything else is just like any other VueJS application.
 
 If you want to disable source maps in Production, add the following to a vue.config.js file in the same directory as the
 package.json file:
