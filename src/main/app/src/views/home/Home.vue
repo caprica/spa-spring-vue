@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" class="App-logo" src="../../assets/logo.png">
+    <HelloWorld msg="VueJS Client Routing and SpringMVC Server Routing."/>
+    <span><router-link to="/users">Users</router-link> | <router-link to="/no/such/route">No Such Route</router-link></span>
   </div>
 </template>
 
@@ -16,3 +17,19 @@ export default {
   }
 }
 </script>
+
+<style>
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>

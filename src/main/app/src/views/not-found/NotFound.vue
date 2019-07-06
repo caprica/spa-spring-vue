@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
-    <h1>This is a Not Found page</h1>
+  <div>
+    <h1>Not Found</h1>
+    <br>
+    <span><router-link to="/">Home</router-link></span>
   </div>
 </template>
