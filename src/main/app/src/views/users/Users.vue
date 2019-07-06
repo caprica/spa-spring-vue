@@ -10,14 +10,14 @@
         </thead>
       <tbody>
         <tr v-for="user in users" :key="user.username">
-          <td><router-link :to="{path: `/users/${user.username}`}">{{ user.username }}</router-link></td>
+          <td><router-link class="App-link" :to="{path: `/users/${user.username}`}">{{ user.username }}</router-link></td>
           <td>{{ user.name }}</td>
         </tr>
       </tbody>
     </table>
     <p v-show="loading" key="loading">Fetching users...</p>
     <br>
-    <span><router-link to="/">Home</router-link></span>
+    <span><router-link class="App-link" to="/">Home</router-link></span>
   </div>
 </template>
 

@@ -17,7 +17,7 @@
     </table>
     <p v-show="loading" key="loading">Fetching user {{ $route.params.username }}...</p>
     <br>
-    <span><router-link to="/">Home</router-link> | <router-link to="/users">Users</router-link></span>
+    <span><router-link class="App-link" to="/">Home</router-link> | <router-link class="App-link" to="/users">Users</router-link></span>
   </div>
 </template>
 
